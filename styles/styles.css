@@ -1,54 +1,3 @@
-/*  
-}
-
-nav ul{
-    justify-content: space-between;
-    display: flex;
-    list-style: none;
-    width: 70%;
-    margin-right: 2%;
-}
-
-nav ul li{
-    color: white;
-    align-items: center;
-}
-
-
-
-nav .mobile{
-    display: none;
-}
-
- */
-
-/* BARRA DE NAVEGACION RESPONSIVE */
-/* @media (max-width:768px) {
-
-    nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        height: 15vh;
-    }
-    nav a{
-        width: 100%;
-    }
-    nav a img{
-        margin-left: 40%;
-    }
-    nav ul{
-        display: flex;
-        justify-content: space-around;
-    }
-    nav ul li{
-        margin-left: 4%;
-    }
-}
- */
-/* COMIENZO DEL CODIGO PARA LA GALERIA DE NIÑOS Y NIÑAS */
-
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 
@@ -73,9 +22,8 @@ nav a{
 }
 
 nav a img{
-    width: 60%;
-    margin-left: 15%;
-    margin-bottom: 2%;
+    width: 50%;
+    margin: 15% 0 2% 15%;
 } 
 
 nav ul{
@@ -231,3 +179,90 @@ main div img {
         transition: all 1s;
     }
 }
+
+/* CODIGO CSS PARA EL INDEX */ 
+
+.presentacion{
+    background-image: url(/img/layered-steps-haikei.svg);
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    flex-direction: column; /* CUANDO SE AGRANDE, SERA ROW */
+}
+
+    .presentacion .left {
+        margin-top: 10%;
+        text-align: center;
+    }
+
+        .presentacion .left h1{
+            font-size: 3em;
+            font-weight: 600;
+        }
+        .presentacion .left p,h3{
+            color: white;
+            padding: 5%;
+            background-color: #222;
+        }
+        .presentacion .left h3{
+            color: white;
+        }
+        .presentacion .left div{
+            display: flex;
+            flex-direction: row;
+            margin: 6% 0 15% 0;
+            justify-content: center;
+            gap:7%;
+        }
+        span{
+            background-image:linear-gradient(90deg, black,rgb(129, 45, 105));
+            color: black;
+            width: 20%;
+            height: 10vh;
+        }
+
+    .presentacion .right{
+        width: 100%;
+    }
+
+@media (min-width:500px){
+    
+    span{
+        height: 8vh;
+    }
+}
+
+@media (min-width:1024px){
+    .presentacion{
+        flex-direction: row; /* CUANDO SE AGRANDE, SERA ROW */
+    } 
+
+    .presentacion .left h1{
+        font-size: 5em;
+        font-weight: 600;
+    }
+
+    .presentacion .left p,h3{
+        color: white;
+        padding: 5%;
+        margin-left: 15%;
+        width: 70%;
+        background-color: #222;
+    }
+    
+    span{
+        background-image:linear-gradient(90deg, black,rgb(129, 45, 105));
+        color: black;
+        width: 10%;
+        height: 10vh;
+    }
+
+
+
+    .presentacion .right{
+        padding: 7%;
+    }
+}
+  
